@@ -229,12 +229,12 @@ pub struct ForEachIntTypeInput {
 
 impl Parse for ForEachIntTypeInput {
     fn parse(input: syn::parse::ParseStream) -> syn::Result<Self> {
-        let path = input.parse()?;
         let invocation_mode = if input.peek(Ident::peek_any) && input.peek2(Token![:]) {
             input.parse::<InvocationMode>()?
         } else {
             InvocationMode::Each
         };
+        let path = input.parse()?;
         let flags = if input.parse::<Token![;]>().is_ok() {
             input.parse()?
         } else {
