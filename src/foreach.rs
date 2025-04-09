@@ -268,7 +268,7 @@ impl ToTokens for ForEachIntTypeInput {
                 tokens.extend(quote!( #( #tts )* ));
             },
             InvocationMode::Args => {
-                tokens.extend(quote!( #path!{ #( #tts )* } ))
+                tokens.extend(quote!( #path!{ #( #tts )* } ));
             },
         }
     }
