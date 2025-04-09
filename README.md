@@ -1,0 +1,1 @@
+This proc macro crate adds the `for_each_int_type` macro, which invokes the input macro for each integer type. This is useful when you want to implement 
