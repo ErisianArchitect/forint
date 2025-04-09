@@ -1,6 +1,6 @@
 [package]
 name = "forint"
-version = "0.1.0-alpha2"
+version = "0.1.0"
 authors = ["Derek F. <https://github.com/ErisianArchitect>"]
 edition = "2021"
 description = "A proc macro for invoking macros for each integer type."
